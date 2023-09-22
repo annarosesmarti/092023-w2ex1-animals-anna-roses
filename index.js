@@ -16,4 +16,9 @@ const animal2 = {
   extinctionYear: -60000000,
 };
 
-const getSpice = (object) => object.species;
+const getSpecie = (animal) => animal.species;
+
+const isExtinct = (animal) => animal.hasOwnProperty("extinctionYear");
+
+const getAnimalInformation = (animal) =>
+  `El animal ${animal.name} es un ${animal.species} de ${animal.ageYears} años de edad y pesa ${animal.weightInKg} kg.`;
