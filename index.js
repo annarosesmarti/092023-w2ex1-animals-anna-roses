@@ -15,3 +15,5 @@ const animal2 = {
   species: "ardilla dientes de sable",
   extinctionYear: -60000000,
 };
+
+const getSpice = (object) => object.species;
